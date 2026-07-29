@@ -59,15 +59,6 @@ export default function Contact() {
           >
             LinkedIn
           </Button>
-          <Button
-            href="https://github.com/juanfyf"
-            target="_blank"
-            rel="noopener noreferrer"
-            variant="secondary"
-            size="lg"
-          >
-            GitHub
-          </Button>
         </div>
       </div>
     </section>

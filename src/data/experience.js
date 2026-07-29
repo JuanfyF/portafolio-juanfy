@@ -20,9 +20,10 @@ export const experience = [
     description:
       'Desarrollo de aplicaciones web y móviles para clientes locales, enfocado en soluciones empresariales.',
     achievements: [
-      'Desarrollo de SIED para gestión de activos TI',
-      'Implementación de SGRH para administración de recursos humanos',
-      'Creación de PWA-GDI para galería de imágenes offline',
+      'HashVault: Gestor de contraseñas zero-knowledge con NestJS y Flutter, cifrado AES-256-GCM',
+      'SMTFI: Sistema de facturación con control de inventario y sincronización en tiempo real',
+      'SGRH: Aplicación web React para gestión de empleados con CRUD y React Router',
+      'PWA-GDI: Galería de imágenes offline con React y API de Unsplash',
     ],
   },
 ]
