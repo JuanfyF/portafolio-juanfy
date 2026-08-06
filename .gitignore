@@ -117,3 +117,6 @@ dist/
 *.spec.*
 __tests__/
 test-portfolio.cjs
+
+# opencode config (may contain API keys)
+opencode.json
