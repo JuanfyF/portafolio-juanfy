@@ -1,5 +1,6 @@
 import { useScrollReveal, useStaggerReveal } from '../../hooks/useScrollReveal'
 import { experience } from '../../data/experience'
+import TerminalWindow from '../ui/TerminalWindow'
 
 export default function Experience() {
   const { ref: sectionRef, isVisible } = useScrollReveal({ threshold: 0.1 })
@@ -11,13 +12,13 @@ export default function Experience() {
     <section
       id="experience"
       ref={sectionRef}
-      className="bg-bg-secondary section-padding border-t border-border"
+      className="bg-surface section-padding border-t border-border-muted"
       aria-labelledby="experience-heading"
     >
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-container mx-auto">
         <p
           id="experience-heading"
-          className={`text-xs font-mono text-text-accent uppercase tracking-widest mb-8 transition-all duration-500 ${
+          className={`text-xs font-mono font-bold uppercase tracking-wider text-surface-tint mb-8 transition-all duration-500 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`}
         >
@@ -32,30 +33,32 @@ export default function Experience() {
             >
               {/* Timeline indicator */}
               <div className="flex flex-col items-center">
-                <div className="w-2 h-2 rounded-full bg-text-accent transition-all duration-300 hover:scale-150"></div>
-                <div className="w-px flex-1 bg-border mt-2"></div>
+                <div className="w-2 h-2 rounded-full bg-surface-tint transition-all duration-300 hover:scale-150"></div>
+                <div className="w-px flex-1 bg-border-muted mt-2"></div>
               </div>
 
               {/* Content */}
-              <div className="pb-8">
-                <h3 className="font-semibold text-base mb-1">{job.role}</h3>
-                <p className="text-sm text-text-accent mb-1">{job.company}</p>
-                <p className="text-xs font-mono text-text-muted mb-3">{job.period}</p>
-                <p className="text-sm text-text-secondary mb-4">{job.description}</p>
+              <div className="pb-8 flex-1">
+                <TerminalWindow title={job.company}>
+                  <h3 className="font-display font-semibold text-base mb-1">{job.role}</h3>
+                  <p className="text-sm text-surface-tint mb-1">{job.company}</p>
+                  <p className="text-xs font-mono text-outline mb-3">{job.period}</p>
+                  <p className="text-sm text-on-surface-variant mb-4">{job.description}</p>
 
-                {job.achievements && (
-                  <ul className="space-y-2">
-                    {job.achievements.map((achievement, idx) => (
-                      <li
-                        key={idx}
-                        className="flex items-start gap-2 text-sm text-text-secondary"
-                      >
-                        <span className="text-text-accent mt-0.5" aria-hidden="true">→</span>
-                        {achievement}
-                      </li>
-                    ))}
-                  </ul>
-                )}
+                  {job.achievements && (
+                    <ul className="space-y-2">
+                      {job.achievements.map((achievement, idx) => (
+                        <li
+                          key={idx}
+                          className="flex items-start gap-2 text-sm text-on-surface-variant"
+                        >
+                          <span className="text-surface-tint mt-0.5" aria-hidden="true">→</span>
+                          {achievement}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </TerminalWindow>
               </div>
             </div>
           ))}

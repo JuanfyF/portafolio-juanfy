@@ -2,19 +2,19 @@ export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-surface-1 border-t border-border">
-      <div className="max-w-6xl mx-auto px-4 py-12 md:px-8">
+    <footer className="bg-surface-charcoal border-t border-border-muted">
+      <div className="max-w-container mx-auto px-4 py-12 md:px-gutter">
         <div className="flex flex-col items-center gap-6">
-          <div className="font-mono text-lg font-medium">
-            JFC<span className="text-text-accent">_</span>
+          <div className="font-mono text-lg font-medium text-on-surface">
+            JFC<span className="text-surface-tint">_</span>
           </div>
 
-          <div className="flex items-center gap-6 text-text-secondary">
+          <div className="flex items-center gap-6 text-on-surface-variant">
             <a
               href="https://github.com/juanfyf"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-text-accent transition-colors"
+              className="hover:text-surface-tint transition-colors"
               aria-label="GitHub"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -29,7 +29,7 @@ export default function Footer() {
               href="https://www.linkedin.com/in/juanfy-flores/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-text-accent transition-colors"
+              className="hover:text-surface-tint transition-colors"
               aria-label="LinkedIn"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -40,7 +40,7 @@ export default function Footer() {
               href="https://www.instagram.com/juanfy_flores/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-text-accent transition-colors"
+              className="hover:text-surface-tint transition-colors"
               aria-label="Instagram"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -49,7 +49,7 @@ export default function Footer() {
             </a>
           </div>
 
-          <div className="text-sm text-text-muted">
+          <div className="text-sm text-outline">
             <p>&copy; {currentYear} Juan Fernando Flores Culqui. Todos los derechos reservados.</p>
           </div>
         </div>

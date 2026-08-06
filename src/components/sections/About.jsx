@@ -1,5 +1,6 @@
 import { useScrollReveal, useStaggerReveal } from '../../hooks/useScrollReveal'
 import { skills, softSkills } from '../../data/skills'
+import TerminalWindow from '../ui/TerminalWindow'
 
 export default function About() {
   const { ref: sectionRef, isVisible } = useScrollReveal({ threshold: 0.1 })
@@ -12,13 +13,13 @@ export default function About() {
     <section
       id="about"
       ref={sectionRef}
-      className="bg-bg-secondary section-padding border-t border-border"
+      className="bg-surface section-padding border-t border-border-muted"
       aria-labelledby="about-heading"
     >
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-container mx-auto">
         <p
           id="about-heading"
-          className={`text-xs font-mono text-text-accent uppercase tracking-widest mb-8 transition-all duration-500 ${
+          className={`text-xs font-mono font-bold uppercase tracking-wider text-surface-tint mb-8 transition-all duration-500 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`}
         >
@@ -31,10 +32,10 @@ export default function About() {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`}
         >
-          <p className="text-lg text-text-secondary leading-relaxed mb-4">
+          <p className="text-lg text-on-surface-variant leading-relaxed mb-4">
             Ingeniero de Software Full Stack especializado en el diseño y desarrollo de soluciones backend robustas y escalables bajo entornos Linux. Domino el ecosistema Java (Spring Boot), JavaScript (Node.js) y React, con enfoque en seguridad (OWASP Top 10), pruebas automatizadas y arquitecturas limpias.
           </p>
-          <p className="text-base text-text-muted leading-relaxed">
+          <p className="text-base text-outline leading-relaxed">
             Integro herramientas de desarrollo asistido por IA en mi flujo de trabajo para acelerar la entrega sin sacrificar calidad de código.
           </p>
         </div>
@@ -47,19 +48,12 @@ export default function About() {
           }`}
         >
           {skills.map((category) => (
-            <div
-              key={category.category}
-              className="bg-surface-1 rounded-lg p-4 border border-border hover:border-border-strong transition-colors"
-            >
-              <h3 className="text-xs font-mono text-text-accent uppercase tracking-wider mb-3 flex items-center gap-2">
-                <span className="text-sm">{category.icon}</span>
-                {category.category}
-              </h3>
+            <TerminalWindow key={category.category} title={category.category}>
               <div className="flex flex-wrap gap-1.5">
                 {category.items.map((skill, index) => (
                   <span
                     key={skill}
-                    className={`stagger-item px-2 py-1 text-xs font-medium bg-bg-accent text-text-secondary rounded border border-border hover:border-text-accent hover:text-text-accent transition-colors ${
+                    className={`stagger-item px-2 py-1 text-xs font-mono font-medium bg-surface-container text-on-surface-variant rounded border border-border-muted hover:border-surface-tint hover:text-surface-tint transition-colors ${
                       visibleSkills.has(index) ? 'visible' : ''
                     }`}
                   >
@@ -67,7 +61,7 @@ export default function About() {
                   </span>
                 ))}
               </div>
-            </div>
+            </TerminalWindow>
           ))}
         </div>
 
@@ -81,11 +75,11 @@ export default function About() {
             {softSkills.map((skill) => (
               <div
                 key={skill.name}
-                className="flex items-center gap-2 px-3 py-2 bg-surface-1 rounded-lg border border-border hover:border-text-accent transition-colors group"
+                className="flex items-center gap-2 px-3 py-2 bg-surface-charcoal rounded border border-border-muted hover:border-surface-tint transition-colors group"
               >
-                <span className="w-1.5 h-1.5 rounded-full bg-text-accent opacity-60 group-hover:opacity-100 transition-opacity"></span>
+                <span className="w-1.5 h-1.5 rounded-full bg-surface-tint opacity-60 group-hover:opacity-100 transition-opacity"></span>
                 <div>
-                  <p className="text-sm font-medium text-text-primary group-hover:text-text-accent transition-colors">
+                  <p className="text-sm font-medium text-on-surface group-hover:text-surface-tint transition-colors">
                     {skill.name}
                   </p>
                 </div>

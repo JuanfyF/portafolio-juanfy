@@ -9,13 +9,13 @@ export default function Button({
   ...props
 }) {
   const baseStyles =
-    'inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-text-accent focus:ring-offset-2 focus:ring-offset-bg-primary min-h-[44px] min-w-[44px]'
+    'inline-flex items-center justify-center font-medium rounded transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-surface-tint focus:ring-offset-2 focus:ring-offset-background min-h-[44px] min-w-[44px]'
 
   const variantStyles = {
-    primary: 'bg-text-accent text-bg-primary hover:bg-text-accent/90 font-semibold',
+    primary: 'bg-surface-tint text-on-primary hover:shadow-glow font-semibold',
     secondary:
-      'bg-transparent text-text-secondary border border-border hover:border-text-accent hover:text-text-accent',
-    ghost: 'text-text-secondary hover:text-text-accent hover:bg-surface-2',
+      'bg-transparent text-primary border border-border-muted hover:bg-neon-cyan-glow hover:text-primary',
+    ghost: 'text-on-surface-variant hover:text-surface-tint hover:bg-surface-container',
   }
 
   const sizeStyles = {

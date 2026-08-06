@@ -8,12 +8,12 @@ export default function Contact() {
     <section
       id="contact"
       ref={sectionRef}
-      className="bg-bg-secondary section-padding border-t border-border"
+      className="bg-background section-padding border-t border-border-muted"
       aria-labelledby="contact-heading"
     >
-      <div className="max-w-6xl mx-auto text-center">
+      <div className="max-w-container mx-auto text-center">
         <p
-          className={`text-xs font-mono text-text-accent uppercase tracking-widest mb-8 transition-all duration-500 ${
+          className={`text-xs font-mono font-bold uppercase tracking-wider text-surface-tint mb-8 transition-all duration-500 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`}
         >
@@ -22,7 +22,7 @@ export default function Contact() {
 
         <h2
           id="contact-heading"
-          className={`text-3xl md:text-4xl font-semibold mb-6 transition-all duration-500 delay-100 ${
+          className={`text-3xl md:text-4xl font-display font-bold mb-6 transition-all duration-500 delay-100 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`}
         >
@@ -30,7 +30,7 @@ export default function Contact() {
         </h2>
 
         <p
-          className={`text-text-secondary mb-10 max-w-lg mx-auto transition-all duration-500 delay-200 ${
+          className={`text-on-surface-variant mb-10 max-w-lg mx-auto transition-all duration-500 delay-200 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`}
         >

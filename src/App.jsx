@@ -11,16 +11,19 @@ const Contact = lazy(() => import('./components/sections/Contact'))
 function LoadingFallback() {
   return (
     <div className="section-padding flex items-center justify-center">
-      <div className="w-8 h-8 border-2 border-text-accent border-t-transparent rounded-full animate-spin" />
+      <div className="w-8 h-8 border-2 border-surface-tint border-t-transparent rounded-full animate-spin" />
     </div>
   )
 }
 
 function App() {
   return (
-    <div className="min-h-screen bg-bg-primary text-text-primary font-sans">
+    <div className="min-h-screen bg-background text-on-surface font-sans relative">
+      {/* Grid Overlay */}
+      <div className="grid-overlay" />
+      
       <Navbar />
-      <main id="main-content">
+      <main id="main-content" className="relative z-10">
         <Hero />
         <Suspense fallback={<LoadingFallback />}>
           <About />

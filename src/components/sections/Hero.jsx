@@ -62,42 +62,42 @@ export default function Hero() {
     <section
       id="hero"
       ref={heroRef}
-      className="min-h-screen flex items-center justify-center bg-bg-secondary section-padding pt-20"
+      className="min-h-screen flex items-center justify-center bg-background section-padding pt-20 relative"
       aria-label="Bienvenida"
     >
-      <div className="max-w-3xl mx-auto text-center">
+      <div className="max-w-3xl mx-auto text-center relative z-10">
         {/* Disponibilidad */}
         <div
-          className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-1 border border-border mb-8 transition-all duration-700 ${
+          className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-terminal-green/10 border border-terminal-green/20 mb-8 transition-all duration-700 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`}
         >
-          <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-          <span className="text-xs font-mono text-text-secondary">Disponible para trabajar</span>
+          <span className="w-2 h-2 rounded-full bg-terminal-green animate-pulse"></span>
+          <span className="text-xs font-mono font-bold uppercase tracking-wider text-terminal-green">Disponible para trabajar</span>
         </div>
 
         {/* Terminal prompt */}
         <p
-          className={`font-mono text-xs tracking-widest text-text-accent mb-6 uppercase transition-all duration-700 ${
+          className={`font-mono text-xs tracking-widest text-surface-tint mb-6 uppercase transition-all duration-700 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`}
         >
           {displayText}
-          <span className="animate-pulse text-text-accent">_</span>
+          <span className="animate-pulse text-surface-tint">_</span>
         </p>
 
         {/* Nombre */}
         <h1
-          className={`text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 text-balance transition-all duration-700 delay-200 ${
+          className={`text-4xl md:text-5xl lg:text-display-xl font-display font-extrabold mb-6 text-balance transition-all duration-700 delay-200 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`}
         >
-          <span className="text-text-primary">Juan Fernando </span>
-          <span className="text-text-accent">Flores Culqui</span>
+          <span className="text-on-surface">Juan Fernando </span>
+          <span className="text-surface-tint neon-text">Flores Culqui</span>
         </h1>
 
         <p
-          className={`text-lg md:text-xl text-text-secondary mb-3 font-light transition-all duration-700 delay-300 ${
+          className={`text-lg md:text-xl text-on-surface-variant mb-3 font-light transition-all duration-700 delay-300 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`}
         >
@@ -105,7 +105,7 @@ export default function Hero() {
         </p>
 
         <p
-          className={`text-sm text-text-muted mb-10 font-mono transition-all duration-700 delay-400 ${
+          className={`text-sm text-outline mb-10 font-mono transition-all duration-700 delay-400 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`}
         >
@@ -131,7 +131,7 @@ export default function Hero() {
           }`}
         >
           <svg
-            className="w-5 h-5 mx-auto text-text-muted animate-bounce cursor-pointer hover:text-text-accent transition-colors"
+            className="w-5 h-5 mx-auto text-outline animate-bounce cursor-pointer hover:text-surface-tint transition-colors"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"

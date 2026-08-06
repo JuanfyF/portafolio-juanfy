@@ -13,13 +13,13 @@ export default function Projects() {
     <section
       id="projects"
       ref={sectionRef}
-      className="bg-bg-secondary section-padding border-t border-border"
+      className="bg-background section-padding border-t border-border-muted"
       aria-labelledby="projects-heading"
     >
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-container mx-auto">
         <p
           id="projects-heading"
-          className={`text-xs font-mono text-text-accent uppercase tracking-widest mb-8 transition-all duration-500 ${
+          className={`text-xs font-mono font-bold uppercase tracking-wider text-surface-tint mb-8 transition-all duration-500 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`}
         >

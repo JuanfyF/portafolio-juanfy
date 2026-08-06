@@ -65,20 +65,20 @@ export default function Navbar() {
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? 'bg-surface-1/95 backdrop-blur-sm border-b border-border'
+            ? 'glass border-b border-border-muted'
             : 'bg-transparent'
         }`}
         role="navigation"
         aria-label="Navegación principal"
       >
-        <div className="max-w-6xl mx-auto px-4 md:px-8">
+        <div className="max-w-container mx-auto px-4 md:px-gutter">
           <div className="flex items-center justify-between h-16">
             <button
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-              className="font-mono text-lg font-medium hover:text-text-accent transition-colors focus-ring"
+              className="font-mono text-lg font-medium text-on-surface hover:text-surface-tint transition-colors focus-ring"
               aria-label="Ir al inicio"
             >
-              JFC<span className="text-text-accent">_</span>
+              JFC<span className="text-surface-tint">_</span>
             </button>
 
             {/* Desktop Navigation */}
@@ -87,10 +87,10 @@ export default function Navbar() {
                 <button
                   key={link.id}
                   onClick={() => scrollToSection(link.id)}
-                  className={`text-sm font-medium transition-colors hover:text-text-accent focus-ring ${
+                  className={`text-sm font-medium transition-colors hover:text-surface-tint focus-ring ${
                     activeSection === link.id
-                      ? 'text-text-accent'
-                      : 'text-text-secondary'
+                      ? 'text-surface-tint'
+                      : 'text-on-surface-variant'
                   }`}
                   aria-current={activeSection === link.id ? 'page' : undefined}
                   role="menuitem"
@@ -103,7 +103,7 @@ export default function Navbar() {
             {/* Mobile Menu Button */}
             <button
               ref={menuButtonRef}
-              className="md:hidden p-2 text-text-secondary hover:text-text-accent transition-colors focus-ring"
+              className="md:hidden p-2 text-on-surface-variant hover:text-surface-tint transition-colors focus-ring"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               aria-expanded={isMobileMenuOpen}
               aria-controls="mobile-menu"
@@ -140,17 +140,17 @@ export default function Navbar() {
             <div
               id="mobile-menu"
               ref={mobileMenuRef}
-              className="md:hidden py-4 border-t border-border bg-surface-1/95 backdrop-blur-sm"
+              className="md:hidden py-4 border-t border-border-muted glass"
               role="menu"
             >
               {navLinks.map((link) => (
                 <button
                   key={link.id}
                   onClick={() => scrollToSection(link.id)}
-                  className={`block w-full text-left py-3 px-4 text-sm font-medium transition-colors hover:text-text-accent hover:bg-surface-2 focus-ring ${
+                  className={`block w-full text-left py-3 px-4 text-sm font-medium transition-colors hover:text-surface-tint hover:bg-surface-container focus-ring ${
                     activeSection === link.id
-                      ? 'text-text-accent bg-surface-2'
-                      : 'text-text-secondary'
+                      ? 'text-surface-tint bg-surface-container'
+                      : 'text-on-surface-variant'
                   }`}
                   aria-current={activeSection === link.id ? 'page' : undefined}
                   role="menuitem"
