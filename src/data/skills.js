@@ -17,7 +17,7 @@ export const skills = [
   {
     category: 'Database',
     icon: '🗄️',
-    items: ['PostgreSQL', 'MySQL', 'MongoDB'],
+    items: ['PostgreSQL', 'MySQL', 'MongoDB', 'SQLite'],
   },
   {
     category: 'DevOps',
@@ -27,7 +27,7 @@ export const skills = [
   {
     category: 'Tools',
     icon: '🛠️',
-    items: ['VS Code', 'Postman'],
+    items: ['VS Code', 'Postman', 'Electron'],
   },
 ]
 
