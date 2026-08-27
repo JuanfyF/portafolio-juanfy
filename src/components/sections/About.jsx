@@ -33,10 +33,10 @@ export default function About() {
           }`}
         >
           <p className="text-lg text-on-surface-variant leading-relaxed mb-4">
-            Ingeniero de Software Full Stack especializado en el diseño y desarrollo de soluciones backend robustas y escalables bajo entornos Linux. Domino el ecosistema Java (Spring Boot), JavaScript (Node.js) y React, con enfoque en seguridad (OWASP Top 10), pruebas automatizadas y arquitecturas limpias.
+            Ingeniero de Software Full Stack con experiencia en el diseño y desarrollo de soluciones completas: sistemas de punto de venta desktop (Electron), aplicaciones móviles multiplataforma (Flutter), y plataformas web escalables (React, Node.js, Spring Boot). Enfoque en seguridad (OWASP Top 10, cifrado zero-knowledge) y arquitecturas limpias.
           </p>
           <p className="text-base text-outline leading-relaxed">
-            Integro herramientas de desarrollo asistido por IA en mi flujo de trabajo para acelerar la entrega sin sacrificar calidad de código.
+            Integro herramientas de desarrollo asistido por IA en mi flujo de trabajo para acelerar la entrega sin sacrificar calidad de código. Cada proyecto es una oportunidad para aplicar buenas prácticas: pruebas automatizadas, code review, y documentación clara.
           </p>
         </div>
 

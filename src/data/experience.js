@@ -7,6 +7,7 @@ export const experience = [
     description:
       'Optimización de rendimiento en aplicaciones existentes, logrando mejoras del 30% en tiempos de respuesta.',
     achievements: [
+      'SIED: Sistema de Gestión de Activos TI para inventario y control de equipos tecnológicos',
       'Optimización de consultas SQL reduciendo tiempos de respuesta en 30%',
       'Implementación de caché para endpoints críticos',
       'Refactorización de código legacy para mejorar mantenibilidad',

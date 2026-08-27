@@ -4,7 +4,7 @@ import { projects } from '../../data/projects'
 
 export default function Projects() {
   const { ref: sectionRef, isVisible } = useScrollReveal({ threshold: 0.1 })
-  const { containerRef: gridRef, visibleItems } = useStaggerReveal(4, { delay: 100 })
+  const { containerRef: gridRef, visibleItems } = useStaggerReveal(5, { delay: 100 })
 
   const featuredProject = projects.find((p) => p.featured)
   const otherProjects = projects.filter((p) => !p.featured)

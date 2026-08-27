@@ -1,32 +1,26 @@
 export const skills = [
   {
     category: 'Backend',
-    icon: '⚙️',
     items: ['Java', 'Spring Boot', 'Node.js', 'NestJS', 'Express', 'PHP'],
   },
   {
     category: 'Frontend',
-    icon: '🎨',
     items: ['React', 'JavaScript', 'TypeScript', 'HTML5', 'CSS3', 'Tailwind CSS'],
   },
   {
     category: 'Mobile',
-    icon: '📱',
     items: ['Flutter', 'Dart', 'PWA'],
   },
   {
     category: 'Database',
-    icon: '🗄️',
     items: ['PostgreSQL', 'MySQL', 'MongoDB', 'SQLite'],
   },
   {
     category: 'DevOps',
-    icon: '🚀',
     items: ['Docker', 'Git', 'GitHub', 'Vercel', 'Linux'],
   },
   {
     category: 'Tools',
-    icon: '🛠️',
     items: ['VS Code', 'Postman', 'Electron'],
   },
 ]

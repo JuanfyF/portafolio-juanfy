@@ -18,13 +18,13 @@ export default class ErrorBoundary extends Component {
   render() {
     if (this.state.hasError) {
       return (
-        <div className="min-h-screen flex items-center justify-center bg-bg-secondary section-padding">
+        <div className="min-h-screen flex items-center justify-center bg-surface section-padding">
           <div className="max-w-2xl mx-auto text-center">
-            <p className="font-mono text-6xl text-text-accent mb-4">!</p>
+            <p className="font-mono text-6xl text-surface-tint mb-4">!</p>
             <h1 className="text-2xl md:text-3xl font-semibold mb-4">
               Algo salió mal
             </h1>
-            <p className="text-text-secondary mb-8">
+            <p className="text-on-surface-variant mb-8">
               Ha ocurrido un error inesperado. Por favor, intenta de nuevo.
             </p>
             <Button

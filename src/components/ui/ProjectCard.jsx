@@ -1,7 +1,7 @@
 import Badge from './Badge'
 
 export default function ProjectCard({ project, featured = false }) {
-  const { name, description, tags, url, icon, status } = project
+  const { name, description, tags, url, status } = project
 
   return (
     <article
@@ -34,20 +34,13 @@ export default function ProjectCard({ project, featured = false }) {
         )}
 
         <div className="flex items-start justify-between mb-4">
-          <div className="flex items-center gap-3">
-            {icon && (
-              <div className="w-10 h-10 rounded bg-surface-container flex items-center justify-center text-surface-tint transition-all duration-300 group-hover:scale-110 group-hover:bg-surface-tint/10">
-                {icon}
-              </div>
-            )}
-            <h3
-              className={`font-display font-semibold ${
-                featured ? 'text-lg' : 'text-base'
-              }`}
-            >
-              {name}
-            </h3>
-          </div>
+          <h3
+            className={`font-display font-semibold ${
+              featured ? 'text-lg' : 'text-base'
+            }`}
+          >
+            {name}
+          </h3>
         </div>
 
         <p className="text-sm text-on-surface-variant mb-4 line-clamp-2 leading-relaxed">{description}</p>

@@ -101,7 +101,7 @@ export default function Hero() {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`}
         >
-          Full Stack Software Engineer
+          Full Stack Engineer · Desktop & Mobile
         </p>
 
         <p
@@ -109,7 +109,7 @@ export default function Hero() {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`}
         >
-          Guaranda, Ecuador · Java · Node.js · React
+          Guaranda, Ecuador · Java · TypeScript · React · Flutter · Electron
         </p>
 
         <div
@@ -130,21 +130,26 @@ export default function Hero() {
             isVisible ? 'opacity-100' : 'opacity-0'
           }`}
         >
-          <svg
-            className="w-5 h-5 mx-auto text-outline animate-bounce cursor-pointer hover:text-surface-tint transition-colors"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
+          <button
             onClick={scrollToAbout}
+            className="text-outline hover:text-surface-tint transition-colors focus-ring"
+            aria-label="Ir a sección Sobre mí"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={1.5}
-              d="M19 14l-7 7m0 0l-7-7m7 7V3"
-            />
-          </svg>
+            <svg
+              className="w-5 h-5 mx-auto animate-bounce"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={1.5}
+                d="M19 14l-7 7m0 0l-7-7m7 7V3"
+              />
+            </svg>
+          </button>
         </div>
       </div>
     </section>

@@ -6,7 +6,6 @@ export const projects = [
       'Sistema de punto de venta (POS) para pastelería en Ecuador. Arquitectura local-first con React, TypeScript, Electron y SQLite. Opera completamente sin internet.',
     tags: ['React', 'TypeScript', 'Electron', 'SQLite', 'Tailwind CSS'],
     url: 'https://github.com/juanfyf/spvsw',
-    icon: '🧁',
     featured: true,
     status: 'En desarrollo',
   },
@@ -17,8 +16,6 @@ export const projects = [
       'Gestor de contraseñas zero-knowledge construido con NestJS y Flutter. Implementa cifrado end-to-end con AES-256-GCM y derivación de claves PBKDF2.',
     tags: ['NestJS', 'Flutter', 'PostgreSQL', 'Cryptography'],
     url: 'https://github.com/juanfyf/hashvault',
-    icon: '🔐',
-    featured: true,
   },
   {
     id: 'sied',
@@ -27,8 +24,6 @@ export const projects = [
       'Sistema de Gestión de Activos TI para inventario y control de equipos tecnológicos. Arquitectura MVC con PHP y MySQL.',
     tags: ['PHP', 'MySQL', 'MVC'],
     url: 'https://github.com/juanfyf/sied',
-    icon: '📋',
-    status: 'Activo',
   },
   {
     id: 'smtfi',
@@ -37,8 +32,6 @@ export const projects = [
       'Sistema de Facturación para gestión de inventario y ventas. Control de stock en tiempo real.',
     tags: ['PHP', 'MySQL'],
     url: 'https://github.com/juanfyf/smtfi',
-    icon: '🧾',
-    status: 'Activo',
   },
   {
     id: 'sgrh',
@@ -47,8 +40,6 @@ export const projects = [
       'Sistema de Gestión de Recursos Humanos para administración de empleados, nóminas y asistencia.',
     tags: ['React', 'Axios', 'Node.js'],
     url: 'https://github.com/juanfyf/sgrh',
-    icon: '👥',
-    status: 'Activo',
   },
   {
     id: 'pwa-gdi',
@@ -57,6 +48,5 @@ export const projects = [
       'Aplicación web progresiva de galería de imágenes con API de Unsplash. Optimizada para instalación offline.',
     tags: ['React', 'PWA', 'Unsplash API'],
     url: 'https://github.com/juanfyf/pwa-gdi',
-    icon: '🖼️',
   },
 ]
