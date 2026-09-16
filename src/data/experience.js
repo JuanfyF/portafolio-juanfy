@@ -21,7 +21,7 @@ export const experience = [
     description:
       'Desarrollo de aplicaciones web y móviles para clientes locales, enfocado en soluciones empresariales.',
     achievements: [
-      'Sweet Bakery POS: Sistema de punto de venta local-first con React, TypeScript, Electron y SQLite',
+      'SPVSW: Sistema de punto de venta local-first con React, TypeScript, Electron y SQLite',
       'HashVault: Gestor de contraseñas zero-knowledge con NestJS y Flutter, cifrado AES-256-GCM',
       'SMTFI: Sistema de facturación con control de inventario y sincronización en tiempo real',
       'SGRH: Aplicación web React para gestión de empleados con CRUD y React Router',

@@ -1,11 +1,11 @@
 export const skills = [
   {
     category: 'Backend',
-    items: ['Java', 'Spring Boot', 'Node.js', 'NestJS', 'Express', 'PHP'],
+    items: ['Java', 'Spring Boot', 'Node.js', 'NestJS', 'Express', 'PHP', 'Laravel'],
   },
   {
     category: 'Frontend',
-    items: ['React', 'JavaScript', 'TypeScript', 'HTML5', 'CSS3', 'Tailwind CSS'],
+    items: ['React', 'JavaScript', 'TypeScript', 'HTML5', 'CSS3', 'Tailwind CSS', 'Bootstrap'],
   },
   {
     category: 'Mobile',
@@ -21,7 +21,7 @@ export const skills = [
   },
   {
     category: 'Tools',
-    items: ['VS Code', 'Postman', 'Electron'],
+    items: ['VS Code', 'Postman', 'Electron', 'Vite', 'Prisma', 'Drizzle ORM', 'Zustand', 'React Router', 'Axios', 'Zod'],
   },
 ]
 

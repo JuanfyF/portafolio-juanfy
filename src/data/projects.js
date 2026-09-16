@@ -1,10 +1,10 @@
 export const projects = [
   {
     id: 'spvsw',
-    name: 'Sweet Bakery POS',
+    name: 'SPVSW',
     description:
       'Sistema de punto de venta (POS) para pastelería en Ecuador. Arquitectura local-first con React, TypeScript, Electron y SQLite. Opera completamente sin internet.',
-    tags: ['React', 'TypeScript', 'Electron', 'SQLite', 'Tailwind CSS'],
+    tags: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Electron', 'SQLite', 'Drizzle ORM', 'Zustand'],
     url: 'https://github.com/juanfyf/spvsw',
     featured: true,
     status: 'En desarrollo',

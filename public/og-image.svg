@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D1117;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#161B22;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00D9FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0099FF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- Grid pattern -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#21262D" stroke-width="0.5"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#grid)" opacity="0.5"/>
+  
+  <!-- Terminal window -->
+  <rect x="100" y="80" width="1000" height="470" rx="8" fill="#0D1117" stroke="#30363D" stroke-width="2"/>
+  
+  <!-- Terminal header -->
+  <rect x="100" y="80" width="1000" height="40" rx="8" fill="#161B22"/>
+  <rect x="100" y="112" width="1000" height="8" fill="#161B22"/>
+  
+  <!-- Terminal dots -->
+  <circle cx="130" cy="100" r="6" fill="#FF5F57"/>
+  <circle cx="152" cy="100" r="6" fill="#FEBC2E"/>
+  <circle cx="174" cy="100" r="6" fill="#28C840"/>
+  
+  <!-- Terminal title -->
+  <text x="600" y="105" font-family="monospace" font-size="14" fill="#8B949E" text-anchor="middle">portfolio ~ juanfy</text>
+  
+  <!-- Content -->
+  <text x="150" y="180" font-family="monospace" font-size="48" font-weight="bold" fill="url(#accent)">$</text>
+  <text x="190" y="180" font-family="monospace" font-size="48" font-weight="bold" fill="#FFFFFF">Juan Fernando Flores Culqui</text>
+  
+  <text x="150" y="240" font-family="sans-serif" font-size="24" fill="#8B949E">Full Stack Software Engineer</text>
+  
+  <text x="150" y="300" font-family="monospace" font-size="18" fill="#21262D">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</text>
+  
+  <!-- Tech stack -->
+  <text x="150" y="350" font-family="monospace" font-size="16" fill="#58A6FF">Languages:</text>
+  <text x="300" y="350" font-family="monospace" font-size="16" fill="#C9D1D9">Java · TypeScript · Python</text>
+  
+  <text x="150" y="385" font-family="monospace" font-size="16" fill="#58A6FF">Backend:</text>
+  <text x="280" y="385" font-family="monospace" font-size="16" fill="#C9D1D9">Spring Boot · NestJS · Node.js · Laravel</text>
+  
+  <text x="150" y="420" font-family="monospace" font-size="16" fill="#58A6FF">Frontend:</text>
+  <text x="290" y="420" font-family="monospace" font-size="16" fill="#C9D1D9">React · Next.js · Vue · Tailwind CSS</text>
+  
+  <text x="150" y="455" font-family="monospace" font-size="16" fill="#58A6FF">Mobile:</text>
+  <text x="270" y="455" font-family="monospace" font-size="16" fill="#C9D1D9">Flutter · Dart</text>
+  
+  <text x="150" y="490" font-family="monospace" font-size="16" fill="#58A6FF">Database:</text>
+  <text x="290" y="490" font-family="monospace" font-size="16" fill="#C9D1D9">PostgreSQL · MySQL · MongoDB</text>
+  
+  <!-- Footer -->
+  <text x="600" y="560" font-family="monospace" font-size="14" fill="#30363D" text-anchor="middle">github.com/juanfyf · linkedin.com/in/juanfy-flores</text>
+</svg>

@@ -43,7 +43,7 @@ export default function ProjectCard({ project, featured = false }) {
           </h3>
         </div>
 
-        <p className="text-sm text-on-surface-variant mb-4 line-clamp-2 leading-relaxed">{description}</p>
+        <p className="text-sm text-on-surface-variant mb-4 leading-relaxed">{description}</p>
 
         <div className="flex flex-wrap gap-2 mb-4">
           {tags.map((tag) => (
